@@ -10,3 +10,9 @@ Fabricator(:comment) do
 	body 'body'
 	article
 end
+
+Fabricator(:bad_commenter, from: :comment) do
+	
+	
+	good_bad 'bad'
+end
